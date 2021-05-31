@@ -12,4 +12,6 @@
     <string name="txt_tipo_de_conta">Cc</string>
     <string name="txt_cifrao">$</string>
     <string name="txt_abreviacao_agencia">Ag</string>
+    <string name="txt_notificacoes">Notifications</string>
+    <string name="txt_menu_opcoes">Options</string>
 </resources>

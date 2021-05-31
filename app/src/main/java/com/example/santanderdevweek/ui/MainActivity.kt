@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import com.example.santanderdevweek.R
 import com.example.santanderdevweek.data.Conta
+import java.lang.RuntimeException
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
         mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         buscarContaCliente()
+        // throw RuntimeException("Test crash")
 
     }
 
@@ -46,11 +48,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.item_1 -> {
-                Log.d("CLICK", "Click on item 1")
+            R.id.notificacoes -> {
+                Log.d("CLICK", "Click on Notificações")
+                true
+            }
+            R.id.opcoes -> {
+                Log.d("CLICK", "Click on Opções")
                 true
             } else -> super.onOptionsItemSelected(item)
-
         }
     }
 }
