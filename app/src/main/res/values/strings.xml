@@ -8,4 +8,11 @@
     <string name="txt_recarregar">Recarregar</string>
     <string name="txt_cartao_final">Cartão Final</string>
     <string name="txt_notificacoes">Notificações</string>
+    <string name="txt_ola_usuario">Olá</string>
+    <string name="txt_iv_ola_cliente">"Image View Olá Cliente "</string>
+    <string name="txt_tipo_de_conta">Cc</string>
+    <string name="txt_cifrao">R$</string>
+    <string name="txt_abreviacao_agencia">Ag</string>
+    <string name="txt_descricao_iv_update_saldo">Imagem do ícone de atualizar saldo</string>
+    <string name="txt_descricao_iv_expand">Ícone para expandir informações sobre saldo</string>
 </resources>

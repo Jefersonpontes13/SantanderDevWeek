@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.santanderdevweek.data.Conta
-import com.example.santanderdevweek.data.local.fakeData
+import com.example.santanderdevweek.data.local.FakeData
 
 class MainViewModel : ViewModel() {
 
@@ -12,7 +12,7 @@ class MainViewModel : ViewModel() {
 
     fun buscarContaCliente(): LiveData<Conta> {
 
-        mutableLiveData.value = fakeData().getLocalData()
+        mutableLiveData.value = FakeData().getLocalData()
 
         return mutableLiveData
     }
